@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>    
+   <head>        
+     <title> Christine Sun </title> 
+     <link rel="stylesheet" href="css/style.css">
+     <style>
+       /* {
+       	padding: 0;
+       	margin: 0;
+       }*/
+       .fit { 
+       	/* set relative picture size */
+       	max-width: 100%;
+       	max-height: 100%;
+       }
+       </style>   
+   </head>    
+   <body>        
+     <h1>Welcome to Christine's website!</h1>        
+     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperidiet.</p>    
+     <img class="center fit" id="luka" src="http://static.zerochan.net/Just.Be.Friends.full.1479577.jpg">
+
+     <script src="http://code.jquery.com/jquery-latest.js"></script>
+     <script type="text/javascript" language="JavaScript">
+     function set_body_height() { 
+     	// set body height = window height
+     	$('body').height($(window).height());
+     }
+     $(document).ready(function() {
+     	$(window).bind('resize', set_body_height);
+     	set_body_height();
+     });
+	</script>
+   </body>
+</html>
